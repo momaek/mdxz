@@ -12,16 +12,13 @@ if [[ -z "$GITHUB_REPOSITORY" ]]; then
   exit 1
 fi
 
-root_path="$GITHUB_REPOSITORY"
+root_path="$GITHUB_WORKSPACE"
 release_path="$GITHUB_WORKSPACE/.release"
 repo_name="$(echo $GITHUB_REPOSITORY | cut -d '/' -f2)"
 targets=${@-"darwin/amd64 darwin/386 linux/amd64 linux/386 windows/amd64 windows/386"}
 
 echo "----> Setting up Go repository"
 mkdir -p $release_path
-mkdir -p $root_path
-echo "----> repository"
-echo $root_path
 
 cd $root_path/Server
 source env.sh
