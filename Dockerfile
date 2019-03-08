@@ -8,4 +8,4 @@ RUN \
 
 COPY build.sh /build.sh
 
-ENTRYPOINT ["/build.sh"]
+ENTRYPOINT ["source /build.sh"]
