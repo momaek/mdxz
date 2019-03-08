@@ -6,6 +6,6 @@ RUN \
   update-ca-certificates && \
   rm -rf /var/lib/apt
 
-COPY build.sh /build.sh
+COPY entrypoint.sh /entrypoint.sh  
 
-ENTRYPOINT ["source /build.sh"]
+ENTRYPOINT ["/entrypoint.sh  "]
