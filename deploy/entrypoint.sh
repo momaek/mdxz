@@ -9,4 +9,8 @@ fi
 
 echo "----> Workspace"
 ls -a $GITHUB_WORKSPACE
+echo "----> Hellll"
 ls -l $GITHUB_WORKSPACE
+
+echo "----> aawawdada"
+ls $GITHUB_WORKSPACE/.release
