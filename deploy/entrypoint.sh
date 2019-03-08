@@ -8,4 +8,5 @@ if [[ -z "$GITHUB_WORKSPACE" ]]; then
 fi
 
 echo "----> Workspace"
-ls $GITHUB_WORKSPACE
+ls -a $GITHUB_WORKSPACE
+ls -l $GITHUB_WORKSPACE
