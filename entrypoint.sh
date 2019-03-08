@@ -20,7 +20,9 @@ targets=${@-"darwin/amd64 darwin/386 linux/amd64 linux/386 windows/amd64 windows
 echo "----> Setting up Go repository"
 mkdir -p $release_path
 mkdir -p $root_path
-cp -a $GITHUB_WORKSPACE/* $root_path/
+echo "----> repository"
+echo $root_path
+
 cd $root_path/Server
 source env.sh
 cd src/room.cafe
