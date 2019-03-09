@@ -22,7 +22,7 @@ mkdir -p $release_path
 
 cd $root_path/Server
 source env.sh
-cd src/room.cafe
+cd src/app
 
 for target in $targets; do
   os="$(echo $target | cut -d '/' -f1)"
